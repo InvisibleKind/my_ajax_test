@@ -13,3 +13,12 @@ plugin.tx_myajaxtest {
         }
     }
 }
+
+# Custom pageType needed to prevent output of TYPO3 comments of debug mode (although typoscript_rendering can work without custom type)
+json = PAGE
+json.typeNum = 101
+json.config {
+	xhtml_cleaning = 0
+	admPanel = 0
+	debug = 0
+}
